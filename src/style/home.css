@@ -1,0 +1,173 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0,5rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    padding: 0.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to bottom, #5f4747, #685e5e);
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    margin-left: 110px;
+    margin-top: 8%;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    background-color: #fff;
+    color: #00bcd4;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  
+  /* About Section */
+  .about {
+    background:#dbdada;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-left: 13%;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 4rem 1rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .service-card{
+    background-image: url('hotel.jpg'); /* Path ke gambar */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .service-card2{
+    background-image: url('ps.webp'); /* Path ke gambar */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .service-card3{
+    background-image: url('air.jpg'); /* Path ke gambar */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .service-card, .service-card2, .service-card3 {
+    flex: 1 1 30%;
+    
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-left: 120px;
+  }
+  
+  .service-card:hover, .service-card2:hover, .service-card3:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .service-card p {
+    color: #777;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 0.875rem;
+    width: 105%;
+  }
+  
